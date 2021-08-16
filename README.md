@@ -1,3 +1,6 @@
+### 該專案為近期學習JWT機制而實作的專案，尚未有Template模板渲染
+### 提供下方api文件可於Postman進行測試。
+
 # JWT Token
 * 為登入驗證機制。保存期限因測試需求設置為1分鐘，提供token刷新功能。
 * 登入成功後要在Header內帶入Authorization: Barer <token>，才能順利完成後續API呼叫
