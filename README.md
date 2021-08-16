@@ -18,7 +18,7 @@
 
 
 # API文件
-* 皆須在Header內加入JWT token(Authorization: JWT <token>)
+* 皆須在Header內加入JWT token(Authorization: Barer <token>)
 
 ## 獲取所有用戶名單
 
