@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/TsaiWei/Desktop/JWT_Practice/src/main/java/com/example/jwt_practice</OriginalElement>
+  <nodes>
+    <node x="868.4166666666667" y="674.0">com.example.jwt_practice.api.RoleToUserForm</node>
+    <node x="10.5" y="416.5">com.example.jwt_practice.repo.RoleRepo</node>
+    <node x="673.6384375" y="954.5">com.example.jwt_practice.api.UserResource</node>
+    <node x="255.50000000000003" y="267.0">com.example.jwt_practice.domain.User</node>
+    <node x="387.6384375" y="977.5">com.example.jwt_practice.JwtPracticeApplication</node>
+    <node x="179.5294791666666" y="754.5">com.example.jwt_practice.repo.UserRepo</node>
+    <node x="467.6388541666666" y="708.5">com.example.jwt_practice.service.UserService</node>
+    <node x="385.6384375" y="0.0">com.example.jwt_practice.domain.Role</node>
+    <node x="488.0" y="1159.0">com.example.jwt_practice.filter.CustomAuthenticationFilter</node>
+    <node x="0.0" y="1170.5">com.example.jwt_practice.filter.CustomAuthorizationFilter</node>
+    <node x="335.5" y="1288.0">com.example.jwt_practice.security.SecurityConfig</node>
+    <node x="69.88843749999995" y="943.0">com.example.jwt_practice.service.UserServiceImp</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.jwt_practice.service.UserServiceImp" target="com.example.jwt_practice.repo.UserRepo" relationship="TO_ONE">
+      <point x="55.39999999999998" y="-85.5" />
+      <point x="263.78843749999993" y="922.0" />
+      <point x="284.5294791666666" y="922.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.example.jwt_practice.service.UserServiceImp" target="com.example.jwt_practice.domain.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-85.5" />
+      <point x="208.38843749999995" y="912.0" />
+      <point x="156.1384375" y="912.0" />
+      <point x="156.1384375" y="648.0" />
+      <point x="372.0" y="648.0" />
+      <point x="0.0" y="177.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.domain.User" target="com.example.jwt_practice.domain.Role" relationship="TO_MANY">
+      <point x="0.0" y="-177.5" />
+      <point x="372.0" y="237.0" />
+      <point x="435.1384375" y="237.0" />
+      <point x="-49.5" y="108.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.api.UserResource" target="com.example.jwt_practice.domain.Role" relationship="DEPENDENCY">
+      <point x="48.875" y="-74.0" />
+      <point x="918.0134375" y="922.0" />
+      <point x="857.9166666666667" y="922.0" />
+      <point x="857.9166666666667" y="247.0" />
+      <point x="582.1384375" y="247.0" />
+      <point x="582.1384375" y="237.0" />
+      <point x="534.1384375" y="237.0" />
+      <point x="49.5" y="108.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.repo.RoleRepo" target="com.example.jwt_practice.domain.Role" relationship="DEPENDENCY">
+      <point x="0.0" y="-28.0" />
+      <point x="105.0" y="247.0" />
+      <point x="582.1384375" y="247.0" />
+      <point x="582.1384375" y="237.0" />
+      <point x="534.1384375" y="237.0" />
+      <point x="49.5" y="108.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.service.UserService" target="com.example.jwt_practice.domain.User" relationship="DEPENDENCY">
+      <point x="-61.5" y="-74.0" />
+      <point x="529.1388541666665" y="648.0" />
+      <point x="372.0" y="648.0" />
+      <point x="0.0" y="177.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.security.SecurityConfig" target="com.example.jwt_practice.filter.CustomAuthenticationFilter" relationship="CREATE">
+      <point x="88.75" y="-51.0" />
+      <point x="601.75" y="1263.0" />
+      <point x="792.0" y="1263.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.JwtPracticeApplication" target="com.example.jwt_practice.domain.Role" relationship="CREATE">
+      <point x="88.66666666666663" y="-51.0" />
+      <point x="609.3051041666666" y="922.0" />
+      <point x="741.1596874999999" y="922.0" />
+      <point x="741.1596874999999" y="247.0" />
+      <point x="582.1384375" y="247.0" />
+      <point x="582.1384375" y="237.0" />
+      <point x="534.1384375" y="237.0" />
+      <point x="49.5" y="108.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.security.SecurityConfig" target="com.example.jwt_practice.filter.CustomAuthorizationFilter" relationship="CREATE">
+      <point x="-88.75" y="-51.0" />
+      <point x="424.25" y="1263.0" />
+      <point x="234.0" y="1263.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.example.jwt_practice.api.UserResource" target="com.example.jwt_practice.service.UserService" relationship="TO_ONE">
+      <point x="-146.625" y="-74.0" />
+      <point x="722.5134375" y="912.0" />
+      <point x="672.6388541666665" y="912.0" />
+      <point x="82.0" y="74.0" />
+    </edge>
+    <edge source="com.example.jwt_practice.JwtPracticeApplication" target="com.example.jwt_practice.service.UserService" relationship="DEPENDENCY">
+      <point x="0.0" y="-51.0" />
+      <point x="520.6384375" y="922.0" />
+      <point x="590.6388541666665" y="922.0" />
+      <point x="0.0" y="74.0" />
+    </edge>
+    <edge source="com.example.jwt_practice.api.UserResource" target="com.example.jwt_practice.domain.User" relationship="DEPENDENCY">
+      <point x="-48.875" y="-74.0" />
+      <point x="820.2634375" y="922.0" />
+      <point x="846.9166666666667" y="922.0" />
+      <point x="846.9166666666667" y="648.0" />
+      <point x="372.0" y="648.0" />
+      <point x="0.0" y="177.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.service.UserServiceImp" target="com.example.jwt_practice.repo.RoleRepo" relationship="TO_ONE">
+      <point x="-55.400000000000034" y="-85.5" />
+      <point x="152.98843749999992" y="922.0" />
+      <point x="105.0" y="922.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="com.example.jwt_practice.api.UserResource" target="com.example.jwt_practice.api.RoleToUserForm" relationship="DEPENDENCY">
+      <point x="146.625" y="-74.0" />
+      <point x="1015.7634375" y="922.0" />
+      <point x="967.4166666666667" y="922.0" />
+      <point x="0.0" y="108.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.JwtPracticeApplication" target="com.example.jwt_practice.domain.User" relationship="CREATE">
+      <point x="-88.66666666666669" y="-51.0" />
+      <point x="431.9717708333333" y="912.0" />
+      <point x="400.0294791666666" y="912.0" />
+      <point x="400.0294791666666" y="648.0" />
+      <point x="372.0" y="648.0" />
+      <point x="0.0" y="177.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.repo.UserRepo" target="com.example.jwt_practice.domain.User" relationship="DEPENDENCY">
+      <point x="0.0" y="-28.0" />
+      <point x="284.5294791666666" y="648.0" />
+      <point x="372.0" y="648.0" />
+      <point x="0.0" y="177.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.service.UserServiceImp" target="com.example.jwt_practice.service.UserService" relationship="REALIZATION">
+      <point x="110.80000000000001" y="-85.5" />
+      <point x="319.18843749999996" y="922.0" />
+      <point x="508.6388541666666" y="922.0" />
+      <point x="-82.0" y="74.0" />
+    </edge>
+    <edge source="com.example.jwt_practice.service.UserServiceImp" target="com.example.jwt_practice.domain.Role" relationship="DEPENDENCY">
+      <point x="-110.80000000000001" y="-85.5" />
+      <point x="97.58843749999994" y="922.0" />
+      <point x="0.0" y="922.0" />
+      <point x="0.0" y="247.0" />
+      <point x="582.1384375" y="247.0" />
+      <point x="582.1384375" y="237.0" />
+      <point x="534.1384375" y="237.0" />
+      <point x="49.5" y="108.5" />
+    </edge>
+    <edge source="com.example.jwt_practice.service.UserService" target="com.example.jwt_practice.domain.Role" relationship="DEPENDENCY">
+      <point x="61.5" y="-74.0" />
+      <point x="652.1388541666665" y="247.0" />
+      <point x="582.1384375" y="247.0" />
+      <point x="582.1384375" y="237.0" />
+      <point x="534.1384375" y="237.0" />
+      <point x="49.5" y="108.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.15" showDependencies="true" x="915.1483375959078" y="967.913043478261" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
